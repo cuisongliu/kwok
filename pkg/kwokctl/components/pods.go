@@ -60,6 +60,8 @@ func ConvertToPod(component internalversion.Component) corev1.Pod {
 		if v.PathType != "" {
 			t := corev1.HostPathType(v.PathType)
 			s.Type = &t
+		} else {
+			s.Type = format.Ptr(corev1.HostPathFile)
 		}
 		volumes = append(volumes, corev1.Volume{
 			Name: name,

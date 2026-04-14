@@ -174,15 +174,19 @@ spec:
   volumes:
   - hostPath:
       path: /etc/kubernetes/admin.conf
+      type: File
     name: volume-0
   - hostPath:
       path: /etc/kubernetes/pki/ca.crt
+      type: File
     name: volume-1
   - hostPath:
       path: /etc/kubernetes/pki/admin.crt
+      type: File
     name: volume-2
   - hostPath:
       path: /etc/kubernetes/pki/admin.key
+      type: File
     name: volume-3
 status: {}
 EOF
@@ -250,18 +254,23 @@ spec:
   volumes:
   - hostPath:
       path: /etc/kubernetes/admin.conf
+      type: File
     name: volume-0
   - hostPath:
       path: /etc/kubernetes/pki/ca.crt
+      type: File
     name: volume-1
   - hostPath:
       path: /etc/kubernetes/pki/admin.crt
+      type: File
     name: volume-2
   - hostPath:
       path: /etc/kubernetes/pki/admin.key
+      type: File
     name: volume-3
   - hostPath:
       path: /etc/kwok/kwok.yaml
+      type: File
     name: volume-4
 status: {}
 EOF
@@ -316,15 +325,19 @@ spec:
   volumes:
   - hostPath:
       path: /etc/kubernetes/admin.conf
+      type: File
     name: volume-0
   - hostPath:
       path: /etc/kubernetes/pki/ca.crt
+      type: File
     name: volume-1
   - hostPath:
       path: /etc/kubernetes/pki/admin.crt
+      type: File
     name: volume-2
   - hostPath:
       path: /etc/kubernetes/pki/admin.key
+      type: File
     name: volume-3
 status: {}
 EOF
@@ -366,15 +379,19 @@ spec:
   volumes:
   - hostPath:
       path: /etc/kubernetes/admin.conf
+      type: File
     name: volume-0
   - hostPath:
       path: /etc/kubernetes/pki/ca.crt
+      type: File
     name: volume-1
   - hostPath:
       path: /etc/kubernetes/pki/admin.crt
+      type: File
     name: volume-2
   - hostPath:
       path: /etc/kubernetes/pki/admin.key
+      type: File
     name: volume-3
 status: {}
 EOF
@@ -432,15 +449,19 @@ spec:
   volumes:
   - hostPath:
       path: /etc/kubernetes/admin.conf
+      type: File
     name: volume-0
   - hostPath:
       path: /etc/kubernetes/pki/ca.crt
+      type: File
     name: volume-1
   - hostPath:
       path: /etc/kubernetes/pki/admin.crt
+      type: File
     name: volume-2
   - hostPath:
       path: /etc/kubernetes/pki/admin.key
+      type: File
     name: volume-3
 status: {}
 EOF
@@ -492,18 +513,23 @@ spec:
   volumes:
   - hostPath:
       path: /var/components/prometheus/etc/prometheus/prometheus.yaml
+      type: File
     name: volume-0
   - hostPath:
       path: /etc/kubernetes/pki/admin.crt
+      type: File
     name: volume-1
   - hostPath:
       path: /etc/kubernetes/pki/admin.key
+      type: File
     name: volume-2
   - hostPath:
       path: /etc/kubernetes/pki/apiserver-etcd-client.crt
+      type: File
     name: volume-3
   - hostPath:
       path: /etc/kubernetes/pki/apiserver-etcd-client.key
+      type: File
     name: volume-4
 status: {}
 EOF

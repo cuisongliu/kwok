@@ -107,18 +107,23 @@ spec:
   volumes:
   - hostPath:
       path: /etc/kubernetes/admin.conf
+      type: File
     name: volume-0
   - hostPath:
       path: /etc/kubernetes/pki/ca.crt
+      type: File
     name: volume-1
   - hostPath:
       path: /etc/kubernetes/pki/admin.crt
+      type: File
     name: volume-2
   - hostPath:
       path: /etc/kubernetes/pki/admin.key
+      type: File
     name: volume-3
   - hostPath:
       path: /etc/kwok/kwok.yaml
+      type: File
     name: volume-4
 status: {}
 EOF
